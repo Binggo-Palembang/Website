@@ -3,13 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Binggo! Barbershop Sukabangun II | Barber shop di Sukarami, Palembang</title>
-<meta name="description" content="Binggo! Barbershop Sukabangun II, Jl. Sukabangun II No.2299, Sukarami, Palembang. Rating 4,7 di Google. Buka hingga pukul 21.00.">
+<link rel="icon" type="image/png" href="icon (1).png">
+<link rel="apple-touch-icon" href="icon (1).png">
+<link rel="preload" as="image" href="background.png">
+<title>Binggo! The Gentleman's Cut & Shaves | Barbershop di Palembang</title>
+<meta name="description" content="Binggo! Barbershop punya 2 cabang di Palembang: Sukabangun II dan Ampibi 20 Ilir. Buka setiap hari pukul 09.00 sampai 21.00.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Binggo! Barbershop Sukabangun II, Palembang">
-<meta property="og:description" content="Barber shop di Sukarami, Palembang. Rating 4,7 di Google.">
+<meta property="og:title" content="Binggo! The Gentleman's Cut & Shaves, Palembang">
+<meta property="og:description" content="2 cabang di Palembang: Sukabangun II dan Ampibi 20 Ilir. Buka setiap hari 09.00 sampai 21.00.">
 <meta name="theme-color" content="#1c3f9e">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarberShop","name":"Binggo! Barbershop Sukabangun II","telephone":"+6281367171138","address":{"@type":"PostalAddress","streetAddress":"Jl. Sukabangun II No.2299, Suka Bangun, Kec. Sukarami","addressLocality":"Kota Palembang","addressRegion":"Sumatera Selatan","postalCode":"30961","addressCountry":"ID"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"392"},"sameAs":["https://www.instagram.com/binggohaircut"]}</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"BarberShop","name":"Binggo! Barbershop Sukabangun II","telephone":"+6281367171138","address":{"@type":"PostalAddress","streetAddress":"Jl. Sukabangun II No.2299, Suka Bangun, Kec. Sukarami","addressLocality":"Kota Palembang","addressRegion":"Sumatera Selatan","postalCode":"30961","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-21:00"},{"@context":"https://schema.org","@type":"BarberShop","name":"Binggo! The Gentleman's Cut & Shaves","telephone":"+6285167899990","address":{"@type":"PostalAddress","streetAddress":"Jalan Ampibi 20 Ilir II Kemuning, 20 Ilir D II","addressLocality":"Kota Palembang","addressRegion":"Sumatera Selatan","postalCode":"30164","addressCountry":"ID"},"openingHours":"Mo-Su 09:00-21:00"}]</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
@@ -27,10 +30,13 @@ a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 .btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--navy)}
 .btn.red{background:var(--red);color:#fff}
 .nav{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(.7rem + env(safe-area-inset-top,0px)) 1.2rem .7rem;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:.5rem;text-decoration:none;font:400 1.5rem "Bowlby One",sans-serif;color:var(--cream);background:var(--navy);padding:.3rem .9rem .3rem .6rem;border-radius:999px}
+.logo{display:flex;align-items:center;gap:.5rem;text-decoration:none;font:400 1.4rem "Bowlby One",sans-serif;color:var(--cream);background:var(--navy);padding:.25rem .9rem .25rem .3rem;border-radius:999px}
+.logo img{width:2.2rem;height:2.2rem;border-radius:50%;object-fit:cover;background:var(--cream)}
 .nav .btn{padding:.5rem 1.1rem;box-shadow:3px 3px 0 var(--navy)}
 .hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;isolation:isolate;background:var(--blue);color:var(--cream);clip-path:polygon(0 0,100% 0,100% 94%,0 100%)}
 .layer{position:absolute;inset:-12% 0;will-change:transform;pointer-events:none}
+.l0{z-index:-4;background:url("background.png") center/cover no-repeat}
+.l0::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(15,33,96,.5),rgba(15,33,96,.78))}
 .l1{z-index:-3}
 .pole{position:absolute;top:-8%;bottom:-8%;right:5%;width:min(30vw,13rem);border-radius:999px;overflow:hidden;border:7px solid var(--cream);box-shadow:8px 8px 0 var(--navy);transform:rotate(9deg)}
 .pole i{position:absolute;inset:-60% 0;background:repeating-linear-gradient(-35deg,var(--red) 0 2.2rem,var(--cream) 2.2rem 4.4rem,#2d63e0 4.4rem 6.6rem,var(--cream) 6.6rem 8.8rem);animation:spin 5s linear infinite}
@@ -40,89 +46,94 @@ a:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
 .l3{z-index:-1}
 .l3 svg{position:absolute;left:3%;bottom:14%;width:min(34vw,12rem);transform:rotate(-20deg);filter:drop-shadow(5px 5px 0 var(--navy))}
 .hero .wrap{padding-top:7rem;padding-bottom:6rem;width:100%}
-.hero h1{font-size:clamp(3.4rem,14vw,9.5rem);text-shadow:5px 5px 0 var(--red);max-width:7ch}
+.hero h1{font-size:clamp(3.8rem,16vw,10rem);text-shadow:5px 5px 0 var(--red)}
 .hero p{font-size:1.4rem;font-weight:700;margin:1.4rem 0 1.8rem;max-width:22rem}
-.cta{display:flex;flex-wrap:wrap;gap:1rem}
-.sticker{position:absolute;right:7%;bottom:12%;width:7rem;height:7rem;border-radius:50%;background:var(--sun);color:var(--navy);display:grid;place-items:center;text-align:center;font:400 1.9rem/1 "Bowlby One",sans-serif;border:4px solid var(--navy);box-shadow:5px 5px 0 var(--navy);transform:rotate(-12deg)}
-.sticker small{display:block;font:700 .85rem "DM Sans",sans-serif;margin-top:.2rem}
+.sticker{position:absolute;right:7%;bottom:12%;width:7rem;height:7rem;border-radius:50%;background:var(--sun);color:var(--navy);display:grid;place-items:center;text-align:center;font:400 2.4rem/1 "Bowlby One",sans-serif;border:4px solid var(--navy);box-shadow:5px 5px 0 var(--navy);transform:rotate(-12deg)}
+.sticker small{display:block;font:700 .9rem "DM Sans",sans-serif;margin-top:.1rem}
 .ribbon{background:var(--red);color:var(--cream);overflow:hidden;white-space:nowrap;transform:rotate(-2deg);margin:-2.2rem -1rem 0;position:relative;z-index:2;border-block:4px solid var(--navy)}
 .ribbon div{display:inline-block;padding:.7rem 0;font:400 1.5rem "Bowlby One",sans-serif;animation:slide 22s linear infinite}
 @keyframes slide{to{transform:translateX(-50%)}}
 section{padding:5rem 0}
-h2{font-size:clamp(2.3rem,8vw,4.2rem);margin-bottom:1.2rem}
-.about p{max-width:34rem;font-size:1.35rem;margin:0 0 1.8rem}
-.visit{background:var(--navy);color:var(--cream);clip-path:polygon(0 6%,100% 0,100% 100%,0 100%);padding-top:7rem}
-.cards{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
-.card{background:var(--cream);color:var(--navy);border:4px solid var(--sun);border-radius:1.2rem;padding:1.4rem;box-shadow:6px 6px 0 var(--red)}
-.card:nth-child(2){transform:rotate(1.5deg)}.card:nth-child(3){transform:rotate(-1.2deg)}
-.card h3{font-size:1.5rem;margin-bottom:.6rem}
-.card p{margin:0 0 .5rem}
-.card a.link{font-weight:700;text-decoration-color:var(--red);text-decoration-thickness:3px;text-underline-offset:4px}
+h2{font-size:clamp(2.3rem,8vw,4.2rem);margin-bottom:2rem}
+.branches{background:var(--cream)}
+.cards{display:grid;gap:1.8rem;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr))}
+.card{background:#fff;border:4px solid var(--navy);border-radius:1.2rem;padding:1.6rem;box-shadow:7px 7px 0 var(--red);display:flex;flex-direction:column;gap:.9rem}
+.card:nth-child(2){transform:rotate(1deg)}
+.card:nth-child(1){transform:rotate(-1deg)}
+.card h3{font-size:1.7rem}
+.rate{align-self:flex-start;background:var(--sun);border:3px solid var(--navy);border-radius:999px;padding:.15rem .8rem;font:400 1.1rem "Bowlby One",sans-serif}
+.card p{margin:0}
+.card .lbl{font-weight:700;color:var(--red);font-size:.9rem;text-transform:uppercase;letter-spacing:.06em;display:block}
 .card .tel{font:400 1.5rem "Bowlby One",sans-serif;text-decoration:none}
+.card .actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:.4rem}
+.card .btn{padding:.7rem 1.2rem;font-size:1rem}
+.about{background:var(--navy);color:var(--cream);clip-path:polygon(0 6%,100% 0,100% 100%,0 100%);padding-top:7rem}
+.about p{max-width:34rem;font-size:1.35rem;margin:0 0 1.8rem}
 footer{background:var(--navy);color:var(--cream);padding:1.5rem 0 2.5rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;border-top:2px dashed #ffffff44;padding-top:1.4rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pole i,.ribbon div{animation:none}.layer{transform:none!important}.btn{transition:none}}
-@media (max-width:640px){.pole{right:-6%;width:8rem}.sticker{width:5.6rem;height:5.6rem;font-size:1.5rem;right:5%;bottom:9%}.l3 svg{bottom:8%}}
+@media (max-width:640px){.pole{right:-6%;width:8rem}.sticker{width:5.6rem;height:5.6rem;font-size:1.8rem;right:5%;bottom:9%}.l3 svg{bottom:8%}.card:nth-child(n){transform:none}}
 </style>
 </head>
 <body>
 <header class="nav">
-  <a class="logo" href="#top" aria-label="Binggo! Barbershop">
-    <svg width="16" height="30" viewBox="0 0 22 38" aria-hidden="true"><rect x="2" y="2" width="18" height="34" rx="9" fill="#fff4dc"/><path d="M2 12 20 6M2 22l18-6M2 32l18-6" stroke="#ef3b36" stroke-width="4"/></svg>
-    Binggo!
-  </a>
-  <a class="btn" href="tel:+6281367171138">Telepon</a>
+  <a class="logo" href="#top" aria-label="Binggo!"><img src="icon.png" alt="">Binggo!</a>
+  <a class="btn" href="#cabang">Cabang</a>
 </header>
 
 <main id="top">
 <div class="hero">
+  <div class="layer l0" data-speed="0.08" aria-hidden="true"></div>
   <div class="layer l1" data-speed="0.12" aria-hidden="true"><div class="pole"><i></i></div></div>
   <div class="layer l2" data-speed="0.3" aria-hidden="true"><span>BINGGO!</span></div>
   <div class="layer l3" data-speed="-0.14" aria-hidden="true">
     <svg viewBox="0 0 200 200"><g fill="none" stroke="#ffc83d" stroke-width="12"><circle cx="55" cy="150" r="26"/><circle cx="145" cy="150" r="26"/></g><path d="M62 128 150 20M138 128 50 20" stroke="#fff4dc" stroke-width="14" stroke-linecap="round"/></svg>
   </div>
   <div class="wrap">
-    <h1>Binggo! Barbershop</h1>
-    <p>Rambut udah gondrong? Mampir.</p>
-    <div class="cta">
-      <a class="btn" href="tel:+6281367171138">Telepon sekarang</a>
-      <a class="btn red" href="https://www.google.com/maps/dir/?api=1&destination=Jl.+Sukabangun+II+No.2299+Suka+Bangun+Sukarami+Palembang+30961" target="_blank" rel="noopener">Petunjuk arah</a>
-    </div>
+    <h1>Binggo!</h1>
+    <p>The Gentleman's Cut &amp; Shaves</p>
+    <a class="btn red" href="#cabang">Pilih cabang</a>
   </div>
-  <div class="sticker" aria-label="Rating Google 4,7"><div>4,7★</div></div>
+  <div class="sticker" aria-label="2 cabang di Palembang"><div>2<small>cabang</small></div></div>
 </div>
 <div class="ribbon" aria-hidden="true"><div>POTONG ✂ RAPI ✂ BINGGO! ✂ POTONG ✂ RAPI ✂ BINGGO! ✂ POTONG ✂ RAPI ✂ BINGGO! ✂ POTONG ✂ RAPI ✂ BINGGO! ✂ </div></div>
 
-<section class="about" id="tentang"><div class="wrap">
-  <h2>Barber di Sukabangun II</h2>
-  <p>Binggo! Barbershop ada di Sukarami, Palembang. Intip hasil potongannya di Instagram.</p>
-  <a class="btn red" href="https://www.instagram.com/binggohaircut" target="_blank" rel="noopener">@binggohaircut</a>
+<section class="branches" id="cabang"><div class="wrap">
+  <h2>Cabang kami</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>Sukabangun II</h3>
+      <span class="rate">4,7★</span>
+      <p><span class="lbl">Alamat</span>Jl. Sukabangun II No.2299, Suka Bangun, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961</p>
+      <p><span class="lbl">Jam buka</span>Setiap hari, 09.00 sampai 21.00</p>
+      <p><span class="lbl">Telepon</span><a class="tel" href="tel:+6281367171138">+62 813-6717-1138</a></p>
+      <div class="actions">
+        <a class="btn red" href="https://www.google.com/maps/dir/?api=1&destination=Jl.+Sukabangun+II+No.2299+Suka+Bangun+Sukarami+Palembang+30961" target="_blank" rel="noopener">Petunjuk arah</a>
+        <a class="btn" href="https://www.instagram.com/binggohaircut" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </article>
+    <article class="card">
+      <h3>Ampibi 20 Ilir</h3>
+      <span class="rate">4,6★</span>
+      <p><span class="lbl">Alamat</span>Jalan Ampibi 20 Ilir II Kemuning, 20 Ilir D II, Palembang, Kota Palembang, Sumatera Selatan 30164</p>
+      <p><span class="lbl">Jam buka</span>Setiap hari, 09.00 sampai 21.00</p>
+      <p><span class="lbl">Telepon</span><a class="tel" href="tel:+6285167899990">+62 851-6789-9990</a></p>
+      <div class="actions">
+        <a class="btn red" href="https://www.google.com/maps/dir/?api=1&destination=Jalan+Ampibi+20+Ilir+II+Kemuning+20+Ilir+D+II+Palembang+30164" target="_blank" rel="noopener">Petunjuk arah</a>
+      </div>
+    </article>
+  </div>
 </div></section>
 
-<section class="visit" id="kontak"><div class="wrap">
+<section class="about"><div class="wrap">
   <h2>Yuk mampir</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Alamat</h3>
-      <p>Jl. Sukabangun II No.2299, Suka Bangun, Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961</p>
-      <a class="link" href="https://www.google.com/maps/dir/?api=1&destination=Jl.+Sukabangun+II+No.2299+Suka+Bangun+Sukarami+Palembang+30961" target="_blank" rel="noopener">Petunjuk arah</a>
-    </div>
-    <div class="card">
-      <h3>Jam buka</h3>
-      <p>Buka hingga pukul 21.00</p>
-    </div>
-    <div class="card">
-      <h3>Telepon</h3>
-      <p><a class="tel" href="tel:+6281367171138">+62 813-6717-1138</a></p>
-    </div>
-  </div>
+  <p>Pilih cabang terdekat, telepon, lalu datang. Rambut udah gondrong? Mampir.</p>
+  <a class="btn" href="#cabang">Lihat cabang</a>
 </div></section>
 </main>
 
-  <link rel="icon" type="image/png" href="icon (1).png">
-
 <footer><div class="wrap">
-  <span>Binggo! Barbershop Sukabangun II</span>
+  <span>Binggo! The Gentleman's Cut &amp; Shaves, Palembang</span>
   <a href="https://www.instagram.com/binggohaircut" target="_blank" rel="noopener">Instagram @binggohaircut</a>
 </div></footer>
 
