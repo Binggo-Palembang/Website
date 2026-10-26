@@ -72,6 +72,9 @@ h2{font-size:clamp(2.3rem,8vw,4.2rem);margin-bottom:2rem}
 .more-btn{align-self:flex-start;font:700 1rem "DM Sans",sans-serif;color:var(--navy);background:var(--sun);border:3px solid var(--navy);border-radius:999px;padding:.55rem 1.1rem;cursor:pointer;box-shadow:3px 3px 0 var(--navy)}
 .about{background:var(--navy);color:var(--cream);clip-path:polygon(0 6%,100% 0,100% 100%,0 100%);padding-top:7rem}
 .about p{max-width:34rem;font-size:1.35rem;margin:0 0 1.8rem}
+.social{display:flex;flex-wrap:wrap;gap:1rem;margin:0 0 2.2rem}
+.social .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.7rem 1.2rem;font-size:1rem}
+.social svg{flex:none}
 footer{background:var(--navy);color:var(--cream);padding:1.5rem 0 2.5rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;border-top:2px dashed #ffffff44;padding-top:1.4rem}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.more{transition:none}.pole i,.ribbon div{animation:none}.layer{transform:none!important}}
@@ -94,7 +97,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;
     <p>The Gentleman's Cut &amp; Shaves</p>
     <a class="btn red" href="#cabang">Pilih cabang</a>
   </div>
-  <div class="sticker"><div>9<small>cabang</small></div></div>
 </div>
 <div class="ribbon" aria-hidden="true"><div>POTONG ✂ RAPI ✂ BINGGO! ✂ POTONG ✂ RAPI ✂ BINGGO! ✂ POTONG ✂ RAPI ✂ BINGGO! ✂ POTONG ✂ RAPI ✂ BINGGO! ✂ </div></div>
 <section id="cabang"><div class="wrap">
@@ -107,12 +109,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;
 <section class="about"><div class="wrap">
   <h2>Yuk mampir</h2>
   <p>Pilih cabang terdekat, telepon, lalu datang. Rambut udah gondrong? Mampir.</p>
+  <div class="social">
+    <a class="btn" href="https://www.instagram.com/binggohairstudio/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>@binggohairstudio</a>
+    <a class="btn" href="https://www.instagram.com/binggohaircut" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>@binggohaircut</a>
+    <a class="btn" href="https://web.facebook.com/p/Binggo-Barbershop-100063790373959/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.5-3.3h-3.2V8.6c0-.9.4-1.7 1.8-1.7h1.5V4.1S15.1 3.9 14 3.9c-2.6 0-4.2 1.6-4.2 4.4v2.4H7v3.3h2.8v8z"/></svg>Facebook</a>
+    <a class="btn red" href="https://www.traveloka.com/id-id/activities/indonesia/product/binggo-barbershop-lemabang-2000308346536" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z" transform="translate(0 -1)"/><path d="M14 6v12" stroke-dasharray="2 2"/></svg>Traveloka (Lemabang)</a>
+  </div>
   <a class="btn" href="#cabang">Lihat cabang</a>
 </div></section>
 </main>
 <footer><div class="wrap">
   <span>Binggo! The Gentleman's Cut &amp; Shaves, Palembang</span>
-  <a href="https://www.instagram.com/binggohaircut" target="_blank" rel="noopener">Instagram @binggohaircut</a>
+  <span><a href="https://www.instagram.com/binggohairstudio/" target="_blank" rel="noopener">Instagram</a> · <a href="https://web.facebook.com/p/Binggo-Barbershop-100063790373959/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.traveloka.com/id-id/activities/indonesia/product/binggo-barbershop-lemabang-2000308346536" target="_blank" rel="noopener">Traveloka</a></span>
 </div></footer>
 <script>
 var B=[
@@ -136,7 +144,7 @@ B.forEach(function(b){
   '<p><span class="lbl">Jam buka</span>Setiap hari, 09.00 sampai '+b[4]+'</p>'+
   '<p><a class="tel" href="tel:'+tel+'">'+b[3]+'</a></p>'+
   '<div class="actions"><a class="btn red" href="'+dir+'" target="_blank" rel="noopener">Petunjuk arah</a>'+
-  (b[5]?'<a class="btn" href="https://www.instagram.com/binggohairstudio/?hl=en" target="_blank" rel="noopener">Instagram</a>':'')+
+  (b[5]?'<a class="btn" href="https://www.instagram.com/binggohaircut" target="_blank" rel="noopener">Instagram</a>':'')+
   '</div></div><button class="more-btn" type="button" aria-expanded="false">Lihat selengkapnya</button>';
   var m=c.querySelector('.more'),t=c.querySelector('.more-btn');
   t.onclick=function(){
